@@ -105,6 +105,17 @@ footer {
   font-weight: 500;
 }
 
+.blue.qr-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.blue.qr-btn img {
+  width: 20px;
+  height: 20px;
+}
+
 .send {
   width: 100%;
   background: white;
@@ -113,4 +124,5 @@ footer {
   font-size: 16px;
   font-weight: 500;
   color: #1976d2;
+
 }
