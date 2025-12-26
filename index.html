@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Удостоверение личности</title>
+
+  <!-- iOS-like font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <span class="back">←</span>
+  <span class="title">Удостоверение личности</span>
+</header>
+
+<div class="tabs">
+  <button class="tab active" data-tab="doc">Документ</button>
+  <button class="tab" data-tab="req">Реквизиты</button>
+</div>
+
+<div class="content">
+
+  <!-- Документ -->
+  <div id="doc" class="tab-content active">
+    <label class="upload-main">
+      Загрузить
+      <input type="file" accept="image/*" id="upload" hidden>
+    </label>
+    <div id="preview"></div>
+  </div>
+
+  <!-- Реквизиты -->
+  <div id="req" class="tab-content">
+    <input data-key="fio" placeholder="ФИО">
+    <input data-key="iin" placeholder="ИИН">
+    <input data-key="birth" type="date">
+    <input data-key="docnum" placeholder="Номер документа">
+    <input data-key="issued" type="date">
+    <input data-key="expire" type="date">
+  </div>
+
+</div>
+
+<footer>
+  <button class="blue">📷 Предъявить документ</button>
+  <button class="send">⬆️ Отправить документ</button>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
