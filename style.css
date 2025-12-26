@@ -108,6 +108,7 @@ footer {
 .blue.qr-btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
 }
 
@@ -126,3 +127,4 @@ footer {
   color: #1976d2;
 
 }
+
